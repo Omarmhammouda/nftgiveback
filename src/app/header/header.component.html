@@ -1,0 +1,60 @@
+<nav class="navbar" fxLayout="row" fxLayoutAlign="space-between center">
+  <span class="logo" fxLayout="row" fxLayoutAlign="start center">
+    <img src="./assets/images/HomeLogo.png" />
+  </span>
+
+  <input id="menu-toggle" class="menu-toggle" type="checkbox" />
+  <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+
+  <ul class="menu" id="menu">
+    <li>
+      <a href="#home">Home</a>
+    </li>
+    <li>
+      <a href="#prizes">Prizes</a>
+    </li>
+    <li>
+      <a href="#roadMap">Road Map</a>
+    </li>
+    <li>
+      <a href="#meet">Meet Nour Trades</a>
+    </li>
+
+    <li class="hidden-lg">
+      <div class="divider">
+      </div>
+    </li>
+    <li class="hidden-lg">
+      <a href="https://www.instagram.com/nftgiveback/">Instagram</a>
+    </li>
+    <li class="hidden-lg">
+      <a href="https://twitter.com/nftgivebackllc">Twitter</a>
+    </li>
+    <li class="hidden-lg">
+      <a href="https://discord.gg/4TFjfnHF4c">Discord</a>
+    </li>
+    <li class="hidden-lg">
+      <a href="https://opensea.io/NftGiveback">Enter NOW</a>
+    </li>
+  </ul>
+
+  <div class="connect" fxLayout="row" fxLayoutAlign="end center">
+    <span class="social-media" fxLayout="row">
+      <a href="https://www.instagram.com/nftgiveback/" class="gradient-background social-media-icon">
+        <fa-icon class="icon" [icon]="faInstagram"></fa-icon>
+      </a>
+      <a href="https://twitter.com/nftgivebackllc" class="gradient-background social-media-icon">
+        <fa-icon class="icon" [icon]="faTwitter"></fa-icon>
+      </a>
+      <a href="https://discord.gg/4TFjfnHF4c" class="gradient-background social-media-icon">
+        <fa-icon class="icon" [icon]="faDiscord"></fa-icon>
+      </a>
+    </span>
+
+    <a href="https://opensea.io/NftGiveback" class="gradient-background redirect-btn">
+      Enter NOW
+    </a>
+  </div>
+</nav>

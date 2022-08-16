@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'Noto Sans regular';
+  src: url("/src/assets/fonts/Noto_Sans/NotoSans-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'Noto Sans bold';
+  src: url("/src/assets/fonts/Noto_Sans/NotoSans-Bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'Noto Sans semibold';
+  src: url("/src/assets/fonts/Noto_Sans/NotoSans-SemiBold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'Noto Sans medium';
+  src: url("/src/assets/fonts/Noto_Sans/NotoSans-Medium.ttf") format("ttf");
+}
+
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: #24262b;
+  color: white;
+  font-family: 'Noto Sans regular';
+}
+
+a {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.gradient-background{
+  background-image: linear-gradient(to right, #fc0541 , #ff8d0d);
+}
+
+.redirect-btn,
+.form-btn {
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 30px;
+  height: 48px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-family: 'Noto Sans semibold';
+}
+
+.social-media-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin: 0 8px;
+  display: flex;
+
+  .icon {
+    margin: auto;
+    font-size: 30px;
+    color: black;
+  }
+}
+
+html, body { height: 100%; }
+
+.mat-dialog-container {
+  background-color: #24262b;
+  color: #fff;
+}

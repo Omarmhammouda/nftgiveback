@@ -1,0 +1,140 @@
+.home-section{
+  height: 100vh;
+  padding-top: 100px;
+
+  .campaign-logo{
+    width: 310px;
+    height: 310px;
+  }
+
+  .introduction{
+    font-size: 12px;
+    line-height: 16px;
+    width: 45%;
+    min-width: 300px;
+    text-align: center;
+    font-family: 'Noto Sans semibold';
+  }
+
+  .scroll-arrow{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    display: flex;
+    align-items: center;
+
+    .icon {
+      font-size: 24px;
+    }
+
+    p {
+      margin: 0;
+      margin-left: 10px;
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+}
+
+section{
+  h1{
+    font-size: 67px;
+    line-height: 109px;
+    font-family: 'Noto Sans medium';
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.intro-video {
+  display: flex;
+
+  video {
+    width: 100%;
+  }
+}
+
+.prizes{
+  padding-top: 55px;
+  background-color: #171b29;
+
+  h1 {
+    margin-bottom: 28px;
+  }
+}
+
+.road-map {
+  padding: 135px 0 150px 0;
+
+  h1 {
+    margin-bottom: 205px;
+  }
+
+  h3, p {
+    width: 80%;
+    max-width: 950px;
+    color: #9DA1B2;
+    text-align: center;
+    line-height: 26px;
+    font-family: 'Noto Sans medium';
+  }
+
+  h3 {
+    font-size: 30px;
+    margin: 36px 0;
+  }
+
+  p {
+    font-size: 20px;
+    margin: 0;
+  }
+}
+
+.meet {
+  padding: 225px 0 250px 0;
+
+  h1 {
+    font-size: 48px;
+    line-height: 58px;
+    font-family: 'Noto Sans semibold';
+    margin-bottom: 84px;
+  }
+
+  img {
+    width: 475px;
+    margin-bottom: 30px;
+  }
+
+  h2, p {
+    width: 475px;
+    text-align: left;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 42px;
+    line-height: 62px;
+    font-family: 'Noto Sans semibold';
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'Noto Sans medium';
+    color: #9DA1B2;
+  }
+}
+
+app-card-list{
+  width: 100%;
+}
+
+@media all and (max-width: 960px){
+  .home-section{
+    .scroll-arrow{
+      bottom: 20px;
+      left: 20px;
+    }
+  }
+}

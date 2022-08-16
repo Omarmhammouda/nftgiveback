@@ -1,0 +1,130 @@
+section{
+  width: 100%;
+}
+
+.subscribe{
+  min-height: 200px;
+  background-color: #171b29;
+  font-family: 'Noto Sans semibold';
+  padding: 0 50px;
+
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .subscribe-btn{
+    background-color: #3a3d49;
+    height: 48px;
+    border-radius: 24px;
+  }
+}
+
+.helpful-info{
+  min-height: 330px;
+  padding: 38px 150px 30px 150px;
+
+  .info {
+    width:40%;
+    max-width: 520px;
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 16px;
+      font-size: 32px;
+      line-height: 42px;
+      font-family: 'Noto Sans semibold';
+    }
+
+    p {
+      margin: 0;
+      margin-bottom: 10px;
+      font-size: 16px;
+      line-height: 26px;
+      font-family: 'Noto Sans medium';
+    }
+  }
+}
+
+.legal{
+  min-height: 80px;
+  background-color: #171b29;
+  font-size: 13px;
+  line-height: 19px;
+  font-family: 'Noto Sans semibold';
+
+  .copyright-claim {
+    margin-left: 150px;
+  }
+
+  .legal-resources {
+    margin-right: 150px;
+
+    a {
+      margin: 0 20px;
+    }
+  }
+}
+
+.links, .follow, .resources {
+  a {
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Noto Sans semibold';
+  }
+
+  h2{
+    margin-top: 0;
+    margin-bottom: 36px;
+    font-size: 24px;
+    line-height: 34px;
+    font-family: 'Noto Sans semibold';
+  }
+}
+
+.white-background{
+  background-color: #ffd2d7;
+}
+
+@media all and (max-width: 1279px) {
+  .subscribe {
+    padding-bottom: 30px;
+  }
+
+  .helpful-info {
+
+    .info {
+      width: 100%;
+      margin-bottom: 30px;
+
+      div {
+        width: 100%;
+      }
+    }
+
+    div {
+      width: 100%;
+    }
+
+  }
+}
+
+@media all and (max-width: 959px) {
+  .legal{
+    .copyright-claim {
+      margin-left: 0;
+    }
+
+    .legal-resources {
+      margin-right: 0;
+    }
+  }
+}
+
+@media all and (max-width: 700px) {
+  .helpful-info {
+    padding: 38px 30px 30px 30px;
+  }
+}

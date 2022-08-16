@@ -1,0 +1,30 @@
+p {
+  margin-top: 0
+}
+label {
+  margin-bottom: 5px;
+  line-height: 24px;
+  font-size: 20px;
+}
+
+input {
+  margin-bottom: 15px;
+  line-height: 24px;
+  font-size: 16px;
+  background-color: #141518;
+  color: #fff;
+}
+
+.form-btn {
+  background-color: #3a3d49;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.actions-container {
+  justify-content: center;
+  margin-bottom: 0;
+}

@@ -1,0 +1,67 @@
+<app-header></app-header>
+<section id="home" class="home-section" fxLayout="column" fxLayoutAlign="space-around center">
+  <div class="gradient-background campaign-logo"></div>
+  <div class="introduction">
+    <p>NFT GiveBack is Using Nft's to give back. It's simply, A HUGE giveaway in which the more
+      entries you have the more odds you have of winning a prize.
+      Each giveaway we guarantee more than 50 winners</p>
+  </div>
+  <a href="https://opensea.io/NftGiveback" class="gradient-background redirect-btn">Connect to OpenSea</a>
+
+  <div class="scroll-arrow">
+    <fa-icon class="icon" [icon]="faArrowDown"></fa-icon>
+    <p>Scroll Down</p>
+  </div>
+</section>
+
+<section id="introVideo" class="intro-video">
+  <video autoplay muted>
+    <source src="./assets/videos/intro.mov"/>
+  </video>
+</section>
+
+<section id="prizes" class="prizes" fxLayout="column" fxLayoutAlign="space-around center">
+  <h1>Prizes</h1>
+  <app-card-list [data]="prizes"></app-card-list>
+</section>
+
+<section id="roadMap" class="road-map" fxLayout="column" fxLayoutAlign="space-around center">
+  <h1>NFT Giveback Roadmap</h1>
+  <p>NFT Giveback is Using Nft's to give back. It's simply, A HUGE giveaway in which the more entries
+    you have the more odds you have of winning a prize. Each giveaway we guarantee more than 50 winners</p>
+  <h3>What is the utility/roadmap?</h3>
+  <p>Our goal is to give back half a million dollars to our supporters every other month in real life
+    assets or in eth. We look forward to changing people's lives everyday. Every month we will be
+    giving away 5k to discord members/ nft holders. We have a lot of giveaways to provide for you
+    guys and endless ideas from scavenger hunts, to buying one of you a house and family trips.
+    Stay tuned for the NFTGiveaway take over!!
+    </p>
+  <h3>Who's on the team?</h3>
+  <p>Nour trades owner of stock hours</p>
+  <p>Bundles</p>
+  <p>Adel</p>
+  <h3>How do I buy a NFT Giveback?</h3>
+  <p>Once mint is open, you can directly buy an entry through our website or the secondary market
+    via opensea. Be aware of scams and fake links, we will never send you a message first. All
+    announcements and links will be on our discord. With one entry you're eligible to win our 5k a
+    month sweepstakes every month. If you choose not to claim your prize, we do offer an eth
+    exchange instead. Ex: If you win the McLaren and don't want to claim it you are still eligible to
+    250k in eth. There will be a max of 50 entries per person on the public mint.</p>
+  <h3>What is a whitelist/ presale?</h3>
+  <p>Whitelist is a list of people who get early and guaranteed access to mint at a specific date and
+    window of time. There will be a max of 2 entries per person during presale. Whitelist/presale
+    entries will be 50% off.</p>
+  <h3>How do I get a whitelist role?</h3>
+  <p>We will be hosting random giveaways throughout the weeks, make sure to participate in them to have
+    a chance to win the whitelist role. Another way to enroll in the presale is simply engaging in our
+    community, moderators will be on stand by all day and will give out roles to the most active and
+    helpful users in our discord. We'll also be hosting random trivia games and winners will receive whitelist roles.</p>
+</section>
+
+<section id="meet" class="meet" fxLayout="column" fxLayoutAlign="space-around center">
+  <h1>Meet Nour Trades</h1>
+  <img src="./assets/images/NourTrades.png" />
+  <h2>Nour Trades</h2>
+  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia in deserunt mollit anim id est sint laborum.</p>
+</section>
+<app-footer></app-footer>

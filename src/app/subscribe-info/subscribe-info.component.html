@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Hello</h1>
+<div mat-dialog-content fxLayout="column">
+  <p>What's your contact info?</p>
+  <label>Name</label>
+  <input [(ngModel)]="data.name">
+  <label>Email</label>
+  <input [(ngModel)]="data.email">
+</div>
+<div mat-dialog-actions class="actions-container">
+  <button class="form-btn" (click)="onNoClick()">Cancel</button>
+  <button class="form-btn" [mat-dialog-close]="data" cdkFocusInitial>Subscribe</button>
+</div>

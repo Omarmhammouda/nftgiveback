@@ -1,0 +1,83 @@
+.prize-card {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 450px;
+  overflow: hidden;
+}
+
+.prize-container{
+  width: 100%;
+}
+
+.prize-thumbnail-container{
+  width: 50%;
+  height: 100%;
+}
+
+.prize-thumbnail{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-fit: cover;
+
+}
+
+.prize-content {
+  width: 50%;
+  height: 100%;
+}
+
+.left{
+  padding-right: 20px;
+}
+
+.right{
+  padding-left: 20px;
+}
+
+.prize-content h1{
+  font-family: 'Noto Sans semibold';
+  font-size: 33px;
+  line-height: 41px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.prize-description{
+  width: 70%;
+}
+
+.prize-description p {
+  font-family: 'Noto Sans medium';
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  color: #9DA1B2;
+}
+
+.no-thumbnail-prize-container{
+  width: 100%;
+  padding: 0 10% 50px 10%;
+}
+
+@media only screen and (max-width: 960px) {
+  .prize-card{
+    height: auto;
+  }
+  .prize-content,
+  .prize-thumbnail-container {
+    width: 100%;
+    height: 50%;
+  }
+
+  .right{
+    padding: 0;
+  }
+  .prize-header {
+    margin-top: 10px;
+  }
+  .prize-description{
+    width: 100%;
+  }
+}

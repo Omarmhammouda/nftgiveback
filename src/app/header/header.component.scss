@@ -1,0 +1,180 @@
+.navbar {
+  height: 84px;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+
+  .logo {
+    width: 25%;
+
+    img {
+      height: 117px;
+      width: 117px;
+      margin-left: 30px;
+    }
+  }
+
+  .menu {
+    a {
+      cursor: pointer;
+      font-size: 16px;
+      line-height: 21px;
+      margin: 0 15px;
+      padding-bottom: 5px;
+
+      &:hover{
+        border-bottom: 2px solid white;
+      }
+    }
+  }
+
+  .connect{
+    width: 25%;
+    padding-right: 40px;
+
+    .redirect-btn {
+      margin-left: 38px;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle{
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+.hidden-lg {
+  display: none;
+}
+
+@media all and (max-width: 1100px) {
+  .navbar{
+    .logo {
+      img{
+        margin: 0;
+      }
+
+    }
+    .connect{
+      width: 25%;
+      padding-right: 10px;
+
+      .redirect-btn {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 960px) {
+  .menu-button-container {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .menu {
+    position: absolute;
+    top: 84px;
+    right: 0px;
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+    .divider{
+      height: 0;
+      width: 80%;
+      border-top: 2px solid white;
+    }
+  }
+
+  #menu-toggle ~ .menu li {
+    overflow: hidden;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    height: auto;
+    background-color: black;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    justify-content: center;
+    width: 170px;
+  }
+
+  .menu > li {
+    display: flex;
+    justify-content: right;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+  .menu > li :last-child {
+    padding-bottom: 10px;
+  }
+
+  .connect {
+    display: none !important;
+  }
+
+  a:hover {
+    border-bottom: none !important;
+  }
+}

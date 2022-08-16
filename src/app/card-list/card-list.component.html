@@ -1,0 +1,74 @@
+<div fxLayout="column wrap" fxLayoutGap="100px" fxLayoutAlign="start center">
+  <div *ngFor="let prize of thumbnailPrizes; let i = index"
+    class="prize-card">
+
+    <div class="prize-container" *ngIf="i%2==0"
+      fxLayout="row"
+      fxLayout.lt-md="column"
+      fxLayoutAlign="start center">
+      <div class="prize-thumbnail-container">
+        <img class="prize-thumbnail" src={{prize.image}} />
+      </div>
+      <div class="prize-content right" fxLayout="column" fxLayoutAlign="start start">
+        <div class="prize-header">
+          <h1>
+            {{prize.title}}
+          </h1>
+          <h1>
+            {{prize.prize}}
+          </h1>
+        </div>
+        <div class="prize-description">
+          <p *ngFor="let descriptionParagraph of prize.description">
+            {{descriptionParagraph}}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="prize-container" *ngIf="i%2==1"
+      fxLayout="row-reverse"
+      fxLayout.lt-md="column"
+      fxLayoutAlign="start center">
+      <div class="prize-thumbnail-container">
+        <img class="prize-thumbnail" src={{prize.image}} />
+      </div>
+      <div class="prize-content left" fxLayout="column" fxLayoutAlign="start start">
+        <div class="prize-header">
+          <h1>
+            {{prize.title}}
+          </h1>
+          <h1>
+            {{prize.prize}}
+          </h1>
+        </div>
+        <div class="prize-description">
+          <p *ngFor="let descriptionParagraph of prize.description">
+            {{descriptionParagraph}}
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="no-thumbnail-prize-container"
+    fxLayout.gt-sm="row"
+    fxLayout.lt-md="column">
+    <div *ngFor="let prize of noThumbnailPrizes; let i = index" class="prize-content">
+      <div class="prize-header">
+        <h1>
+          {{prize.title}}
+        </h1>
+        <h1>
+          {{prize.prize}}
+        </h1>
+      </div>
+      <div class="prize-description">
+        <p *ngFor="let descriptionParagraph of prize.description">
+          {{descriptionParagraph}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
